@@ -103,12 +103,9 @@ def bag_of_words(s, words):
 
 def chat(x):
         inp=x
-
-      
         results = model.predict(np.array([bag_of_words(inp, words)]))[0]
         results_index = np.argmax(results)
         tag = labels[results_index]
-
         if results[results_index] > 0.7:  # Threshold can be adjusted
             for tg in data["intents"]:
                 if tg['tag'] == tag:
