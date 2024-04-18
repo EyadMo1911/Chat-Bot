@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-import mainn  # replace this with the name of your Python file containing the chat function
+import mainn  
 
 app = Flask(__name__,template_folder='tem')
 
