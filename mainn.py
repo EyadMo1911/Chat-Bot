@@ -5,8 +5,6 @@ import tensorflow as tf
 import random
 import json
 import pickle
-
-
 from nltk.stem.lancaster import LancasterStemmer
 from time import sleep
 
